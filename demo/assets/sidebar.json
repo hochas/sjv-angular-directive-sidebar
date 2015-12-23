@@ -1,0 +1,9 @@
+{
+	"filters": {
+		"freetext": true,
+		"toggles": true
+	},
+	"options": {
+		"freetextPlaceholder": "Filtrera fritext"
+	}
+}

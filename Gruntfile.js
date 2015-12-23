@@ -31,12 +31,12 @@ module.exports = function(grunt) {
           compress: true
         },
         files: {
-          'dist/directive.min.css': 'src/sidebar.less'
+          'dist/sidebar.min.css': 'src/assets/less/sidebar.less'
         }
       },
       nocompress: {
         files: {
-          'dist/sidebar.css': 'src/sidebar.less'
+          'dist/sidebar.css': 'src/assets/less/sidebar.less'
         }
       }
     },
@@ -92,7 +92,7 @@ module.exports = function(grunt) {
     watch: {
       dev: {
         files: ['src/**'],
-        tasks: ['build', 'test']
+        tasks: ['build']
       }
     },
 
@@ -133,12 +133,14 @@ module.exports = function(grunt) {
 
 
   // Self sustained utility tasks
+  // Self sustained utility tasks
   grunt.registerTask('minify', ['uglify:dist', 'less:dist']);
   grunt.registerTask('test', ['jshint:src', 'karma:dist']);
+  grunt.registerTask('install', ['copy:sjvstyle', 'copy:src'])
 
   grunt.registerTask('dist', ['clean:dist', 'minify', 'less:nocompress', 'copy:src', 'test']);
-  grunt.registerTask('build', ['clean:dist', 'copy:sjvstyle', 'minify', 'less:nocompress', 'copy:src']);
-  grunt.registerTask('serve', ['copy:sjvstyle', 'dist', 'copy:html', 'express', 'watch:dev']);
+  grunt.registerTask('build', ['clean:dist', 'minify', 'less:nocompress', 'copy:src']);
+  grunt.registerTask('serve', ['build', 'copy:html', 'express', 'watch:dev']);
 
 
 };

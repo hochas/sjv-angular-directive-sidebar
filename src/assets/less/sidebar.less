@@ -1,0 +1,48 @@
+@import "variables";
+@import "fonts";
+@import "../../sjv-style/less/variables";
+
+.sidebar {
+    width: 300px;
+    font-family: @font-family-base;
+    padding: @sidebar-padding;
+    position: absolute;
+    overflow-y: auto;
+    z-index: 600;
+    bottom: 0;
+    left: 0;
+    top: @sidebar-height;
+
+    background-color: #fff;
+    border-right: @sidebar-border;
+    border-bottom: @sidebar-border;
+    box-shadow: 4px 0 4px rgba(0, 0, 0, 0.05);
+    
+    @media (min-width: @sidebar-minimum-width) {
+        position: fixed;
+        border-bottom: 0;
+    }
+
+    .freetext {
+      border: @sidebar-border;
+      border-radius: 3px;
+      position: relative;
+
+      .glyphicon {
+    		position: absolute;
+    		padding: 10px;
+    		pointer-events: none;
+    		font-size: 20px;
+    		color: #ACACAC;
+      }
+
+      input {
+        font-size: 18px;
+        width: 100%;
+        border: none;
+        padding: 10px @sidebar-padding;
+        padding-left: 48px;
+      }
+
+    }
+}

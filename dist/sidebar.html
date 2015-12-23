@@ -1,5 +1,6 @@
 <div class="sidebar">
-  <div ng-bind="value"></div>
-  <button ng-click="add()">+</button>
-  <button ng-click="subtract()">-</button>
+    <div class="freetext filter-icon" ng-if="filters.freetext">
+        <i class="glyphicon glyphicon-search"></i>
+        <input type="text" placeholder="{{filters.freetext.placeholder}}" ng-model-options="{ debounce: 700 }">
+    </div>
 </div>

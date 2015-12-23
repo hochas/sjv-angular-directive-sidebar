@@ -5,10 +5,42 @@
   src: url('sjv-style/fonts/open-sans.woff') format('woff');
 }
 .sidebar {
-  color: purple;
+  width: 300px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 15px;
+  position: absolute;
+  overflow-y: auto;
+  z-index: 600;
+  bottom: 0;
+  left: 0;
+  top: 60px;
+  background-color: #fff;
+  border-right: 1px solid #D6D6D6;
+  border-bottom: 1px solid #D6D6D6;
+  box-shadow: 4px 0 4px rgba(0, 0, 0, 0.05);
 }
-.sidebar button {
+@media (min-width: 1000px) {
+  .sidebar {
+    position: fixed;
+    border-bottom: 0;
+  }
+}
+.sidebar .freetext {
+  border: 1px solid #D6D6D6;
+  border-radius: 3px;
+  position: relative;
+}
+.sidebar .freetext .glyphicon {
+  position: absolute;
   padding: 10px;
-  color: green;
+  pointer-events: none;
+  font-size: 20px;
+  color: #ACACAC;
+}
+.sidebar .freetext input {
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  padding: 10px 15px;
+  padding-left: 48px;
 }
