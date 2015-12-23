@@ -1,0 +1,41 @@
+{
+  "name": "sjv-angular-directive-boilerplate",
+  "version": "0.0.1",
+  "description": "Jordbruksverkets Angular Directive Boilerplate",
+  "main": "dist/sidebar.js",
+  "keywords": [
+    "angularjs",
+    "angular",
+    "directive"
+  ],
+  "author": {
+    "name": "Jordbruksverket"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "angular-mocks": "^1.4.8",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-less": "^1.1.0",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-express": "^1.4.1",
+    "grunt-karma": "^0.12.1",
+    "jasmine-core": "^2.4.1",
+    "jshint-stylish": "^2.1.0",
+    "karma": "^0.13.15",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "phantomjs": "^1.9.19",
+    "time-grunt": "^1.2.2"
+  },
+  "gitHead": "2f26b7d62b9f8e98db1ff9d2521b34194d4abb55",
+  "readme": "# sjv-angular-directive-boilerplate\r\n\r\nFör att köra projektet krävs:\r\n* bower\r\n* node\r\n* grunt\r\n\r\n## Installation\r\n    npm install\r\n    bower install\r\n\r\n## Utvecklingsmiljö\r\n\r\nScript i utvecklingsmiljön körs med hjälp av grunt. Dessa körs i ett kommandotolksfönster. Följande kommandon finns tillgängliga när du står i roten av ditt nyskapade projekt.\r\n\r\n\r\n### LESS CSS\r\nNär du lägger till nya stilar till projektet är det viktigt att tänka på att byggfilen har det namn du angav när du körde generatorn. Om du inte skriver all LESS i samma fil är det viktigt att tänka på att du lägger till en import av dina externa filer i huvudfilen:\r\n\r\n\t@import \"din_less_fil\";\r\n\r\nDet genererade projektet innehåller exempel för hur import med LESS fungerar.\r\n\r\n### grunt serve\r\nFör att starta en server och visa resultatet av det som byggts, skriv **grunt serve**.\r\n\r\nKommandot startar en webserver på port 9000 på localhost. Navigera till [localhost:9000/demo/demo.html](localhost:9000/demo/demo.html) för att se det nyskapade projektet.\r\n\r\n### grunt build\r\n\r\nFör att bygga färdiga, distribuerbara filer, skriv **grunt build**. Detta kommando kollar igenom din kod med hjälp av jshint, kompilerar less till css samt minifierar dina filer. Resultatet hamnar i mappen *dist* i rotkatalogen. I denna mapp ligger allt som krävs för att kunna använda direktivet.\r\n\r\nDetta kommando körs automatiskt när du kör grunt serve, detta för att du med säkerhet ska du få se dina senaste ändringar.\r\n\r\n### grunt dist\r\nSkriv **grunt dist** för att bygga ditt projekt och köra tester som ligger i mappen *test*. Kommandot fungerar precis som grunt build ovan, den enda skillnaden är att det också testas av.\r\n\r\n### grunt test\r\nSkriv **grunt test** för att testa din kod. Testerna körs mot katalogen *src* och testar endast JavaScript som inte är minifierad. När din JavaScript-kod är kontrollerad av jshint kommer projektet att byggas och resulterande JavaScript-filer i mappen *dist* kommer att testas med hjälp av testramverkte Jasmine.\r\n\r\nFör att läsa mer om hur man testar Angular-direktiv med Karma och Jasmine, läs [här](https://docs.angularjs.org/guide/unit-testing).\r\n\r\nTesterna körs så kallat *headless* med hjälp av PhantomJS för att inte vara beroende av miljö.\r\n    ",
+  "readmeFilename": "README.md",
+  "_id": "sjv-angular-directive-boilerplate@0.0.1",
+  "_shasum": "14fabce0721a74c5aa924610c3acfde6c8c4c40e",
+  "_from": "git+https://github.com/hochas/sjv-angular-directive-boilerplate.git",
+  "_resolved": "git+https://github.com/hochas/sjv-angular-directive-boilerplate.git#2f26b7d62b9f8e98db1ff9d2521b34194d4abb55"
+}

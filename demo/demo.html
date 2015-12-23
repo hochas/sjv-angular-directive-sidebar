@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app="demo">
+  <head>
+    <meta charset="utf-8">
+    <title>AngularJS directive demo</title>
+
+    <!-- TODO: Include Angular from Bower components -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-sanitize.js"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css">
+
+    <link rel="stylesheet" href="../dist/directive.min.css">
+    <link rel="stylesheet" href="demo.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-muted">Demo</h1>
+
+      <div class="usage row">
+        <h4>Manual</h4>
+        <p><a href="https://github.com/angular/bower-angular">Angular</a> krävs för att detta direktiv ska fungera.</p>
+        <p>Kom ihåg att du själv måste lägga till de bower dependencies du har. Denna generator ger dig endast en utvecklingsmiljö eftersom dependencies kommer skilja sig åt från projekt till projekt.</p>
+        <p>Enklaste användingsfall, inkludera bara ditt nya direktiv i din HTML-sida:</p>
+        <pre>&lt;sidebar&gt;&lt;/sidebar&gt;</pre>
+        <h4>Resultat</h4>
+
+        <sidebar></sidebar>
+      </div>
+    </div>
+
+    <script src="../dist/sidebar.min.js"></script>
+    <script src="demo.js"></script>
+  </body>
+</html>

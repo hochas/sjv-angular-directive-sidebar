@@ -1,0 +1,23 @@
+{
+  "name": "sidebar",
+  "version": "0.0.1",
+  "author": "Jordbruksverket",
+  "description": "Template för Angular-direktiv inom Jordbruksverket",
+  "main": [
+    "dist/sidebar.js",
+    "dist/sidebar.css"
+  ],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.26",
+    "sjv-style": "https://github.com/jordbruksverket/sjv-style.git#0.0.1"
+  }
+}
